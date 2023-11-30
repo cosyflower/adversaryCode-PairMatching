@@ -1,4 +1,4 @@
-package pairmatching;
+package pairmatching.domain;
 
 public enum Course { // 17M
     BACKEND("백엔드"),

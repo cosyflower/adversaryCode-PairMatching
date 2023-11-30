@@ -1,8 +1,8 @@
-package pairmatching;
+package pairmatching.domain;
 
-import static pairmatching.Level.LEVEL1;
-import static pairmatching.Level.LEVEL2;
-import static pairmatching.Level.LEVEL4;
+import static pairmatching.domain.Level.LEVEL1;
+import static pairmatching.domain.Level.LEVEL2;
+import static pairmatching.domain.Level.LEVEL4;
 
 public enum Mission {
     CAR_RACING(LEVEL1, "자동차경주"),

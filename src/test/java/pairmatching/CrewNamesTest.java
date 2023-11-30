@@ -3,6 +3,7 @@ package pairmatching;
 import java.io.IOException;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import pairmatching.domain.CrewNames;
 import pairmatching.initialization.CrewNamesReader;
 
 public class CrewNamesTest {
