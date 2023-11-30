@@ -1,6 +1,7 @@
 package pairmatching;
 
 import java.io.IOException;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import pairmatching.initialization.CrewNamesReader;
 
@@ -11,10 +12,10 @@ public class CrewNamesTest {
         crewNamesReader.readFrontCrewNames();
 
         CrewNames frontendNames = new CrewNames(crewNamesReader.getReadCrewNames());
-        System.out.println(frontendNames.getCrewNames().size());
+        Assertions.assertThat(frontendNames.getCrewNames().size()).isEqualTo(15);
 
         crewNamesReader.readBackendCrewNames();
         CrewNames backendNames = new CrewNames(crewNamesReader.getReadCrewNames());
-        System.out.println(backendNames.getCrewNames().size());
+        Assertions.assertThat(backendNames.getCrewNames().size()).isEqualTo(20);
     }
 }
