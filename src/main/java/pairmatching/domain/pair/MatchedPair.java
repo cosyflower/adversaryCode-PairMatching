@@ -3,13 +3,16 @@ package pairmatching.domain.pair;
 import java.util.ArrayList;
 import java.util.List;
 import pairmatching.domain.Level;
+import pairmatching.domain.Mission;
 
 public class MatchedPair {
     private final Level level;
+    private final Mission mission;
     private final List<Pair> uncheckedPairs;
 
-    public MatchedPair(Level level, List<Pair> pairs) {
+    public MatchedPair(Level level, Mission mission, List<Pair> pairs) {
         this.level = level;
+        this.mission = mission;
         this.uncheckedPairs = new ArrayList<>(pairs);
     }
 
