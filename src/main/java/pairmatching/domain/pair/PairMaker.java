@@ -51,7 +51,7 @@ public class PairMaker {
     }
 
     private List<String> readCrewNameFromReader() throws IOException {
-        if (course.isBackEnd()) {
+        if (course == Course.BACKEND) {
             crewNamesReader.readBackendCrewNames();
             return crewNamesReader.getReadCrewNames();
         }
