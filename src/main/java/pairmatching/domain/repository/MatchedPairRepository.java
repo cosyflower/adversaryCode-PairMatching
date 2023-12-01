@@ -16,4 +16,8 @@ public class MatchedPairRepository {
                 .filter(matchedPair -> matchedPair.hasSameLevel(uncheckedMatchedPair)) // 같은 레벨인 MatchedPair
                 .anyMatch(matchedPair -> matchedPair.hasSamePair(uncheckedMatchedPair));
     }
+
+    public void addNewPair(MatchedPair uncheckedMatchedPair) {
+        matchedPairs.add(uncheckedMatchedPair);
+    }
 }
